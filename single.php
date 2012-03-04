@@ -1,12 +1,19 @@
 <?php get_header(); ?>
-<div id="content">
+<div id="content" class="row">
+    <div class="span9">
+
 <?php the_post(); ?>
 <div id="nav-above" class="navigation">
 <p class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">&laquo;</span> %title' ) ?></p>
 <p class="nav-next"><?php next_post_link( '%link', '%title <span class="meta-nav">&raquo;</span>' ) ?></p>
 </div>
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-<h1 class="entry-title"><?php the_title(); ?></h1>
+<?php
+if ( has_post_thumbnail() ) {
+the_post_thumbnail();
+}
+?>
+<h2 class="entry-title"><?php the_title(); ?></h2>
 <div class="entry-meta">
 <span class="meta-prep meta-prep-author"><?php _e('By ', 'gavd'); ?></span>
 <span class="author vcard"><a class="url fn n" href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>" title="<?php printf( __( 'View all articles by %s', 'gavd' ), $authordata->display_name ); ?>"><?php the_author(); ?></a></span>
@@ -16,11 +23,7 @@
 <?php edit_post_link( __( 'Edit', 'gavd' ), "<span class=\"meta-sep\"> | </span>\n\t\t\t\t\t\t<span class=\"edit-link\">", "</span>\n\t\t\t\t\t" ) ?>
 </div>
 <div class="entry-content">
-<?php 
-if ( has_post_thumbnail() ) {
-the_post_thumbnail();
-} 
-?>
+
 <?php the_content(); ?>
 <?php wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'gavd' ) . '&after=</div>') ?>
 </div>
@@ -50,4 +53,5 @@ get_post_comments_feed_link() ) ?>
 <?php comments_template('', true); ?>
 </div>
 <?php get_sidebar(); ?>
+    </div>
 <?php get_footer(); ?>

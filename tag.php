@@ -1,5 +1,6 @@
 <?php get_header(); ?>
-<div id="content">
+<div id="content" class="row">
+    <div class="span9">
 <?php the_post(); ?>
 <h1 class="page-title"><?php _e( 'Tag Archives for', 'gavd' ) ?> <span><?php single_tag_title() ?></span></h1>
 <?php rewind_posts(); ?>
@@ -42,4 +43,5 @@
 <?php } ?>
 </div>
 <?php get_sidebar(); ?>
+</div>
 <?php get_footer(); ?>

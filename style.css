@@ -1,24 +1,91 @@
 /*
 Theme Name: gavd
-Theme URI: http://tidythemes.com/gavd/
-Description: BEFORE USING AND ESPECIALLY UPGRADING PLEASE READ: tidythemes.com/concept. The bare essentials of a WordPress theme, no visual CSS styles added. Perfect for those who would like to build their own theme from scratch or for clients if you're a developer or designer. This theme is clean, valid code, semi minified, no programmer comments, SEO-friendly and 100% open source. One custom menu and one widgetized sidebar to get you started. If you don't know CSS and would like to learn we've prepared: tidythemes.com/want-to-learn-css and please visit us in the forum for further help: tidythemes.com/forum - Thank You and Enjoy
-Author: TidyThemes
-Author URI: http://tidythemes.com/
+Theme URI: http://www.gavd.co.uk/
+Description: Bootstrap-based theme
+Author: Gavin Davies
+Author URI: http://www.gavd.co.uk/
 Version: 2.0
-Tags: custom-menu, featured-images, microformats, sticky-post, threaded-comments
-License: GNU General Public License v2.0 | From TidyThemes: This theme is completely free and open source to use as you like for both personal and commercial projects without any limitations.
+Tags: bootstrap
+License: CopyLeft. Do what you want with it.
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
+.hero-unit {
+    
+}
+header .hero-unit {
+    padding: 0;
+    position: relative;
+}
 
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{font-size:100%;font:inherit;padding:0;border:0;margin:0;vertical-align:baseline}
-body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+#search {
+    position:absolute;
+    right:0px;
+    bottom: 0px;
+    
+}
+#search form {
+    margin: 0;
+}
+ul.sid li.widget-container, .post {
+    margin-bottom: 12px;
+}
 
-.sticky{}
-.bypostauthor{}
-.wp-caption{}
-.wp-caption-text{}
-.gallery-caption{}
-.alignright{}
-.alignleft{}
-.aligncenter{}
+ul.menu {
+    margin: 0px;
+    padding: 0px;
+}
+/*ul.menu li {
+    float: left;
+    list-style-type: none;
+
+}
+ul.menu li a {
+    border: #000 1px solid;
+    padding: 10px;
+    margin-right: 10px;
+}*/
+#sidebar ul.sid,
+#sidebar ul.sid .widget-container ul.blogroll{
+    margin: 0px;
+    padding:0px;
+}
+#sidebar ul.sid li {
+    
+    list-style-type: none;
+}
+#sidebar ul.sid .widget-container ul li {
+    list-style-type: disc;
+}
+#sidebar ul.sid .widget-container ul.blogroll li {
+    list-style-type: none;
+    margin-bottom: 6px;
+
+}
+
+ul.menu li a {
+    color: #fff;
+}
+
+#content {
+    margin-top: 20px;
+}
+
+.entry-utility {
+    padding-left: 6px;
+}
+
+
+
+
+.post img.wp-post-image {
+    float: right;
+}
+.category .post img.wp-post-image {
+    float: left;
+    margin-right:10px;
+    margin-bottom:14px;
+}
+.category .post {
+    clear: left;
+    
+}
