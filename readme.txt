@@ -4,7 +4,7 @@ YOU MAY DELETE THIS FILE AND ANY OTHER FILE(S) BEFORE STARTING YOUR PROJECT
 
 - - THEME - -
 
-BlankSlate 2.0 WordPress Theme | Demo: tidythemes.com/blankslate
+gavd 2.0 WordPress Theme | Demo: tidythemes.com/gavd
 
 - - DESCRIPTION - -
 
@@ -23,7 +23,7 @@ tidythemes.com/supersimple
 Technical Stuff: GNU General Public License v2.0 | gnu.org/licenses/gpl-2.0.html
 
 Friendly Stuff:
-BlankSlate is 100% free and open source: 
+gavd is 100% free and open source: 
 perfect to build your own themes or use as a base for client projects.
 
 - - SUPPORT - -
