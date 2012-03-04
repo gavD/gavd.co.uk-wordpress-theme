@@ -6,5 +6,8 @@
 </footer>
 </div>
 <?php wp_footer(); ?>
+<script type="text/javascript">
+$(function() {    $('.menu a').addClass('btn').addClass('btn-primary').addClass('btn-large');});
+</script>
 </body>
 </html>

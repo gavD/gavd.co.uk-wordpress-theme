@@ -10,7 +10,7 @@ License: CopyLeft. Do what you want with it.
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 .hero-unit {
-    
+
 }
 header .hero-unit {
     padding: 0;
@@ -21,7 +21,7 @@ header .hero-unit {
     position:absolute;
     right:0px;
     bottom: 0px;
-    
+
 }
 #search form {
     margin: 0;
@@ -50,7 +50,7 @@ ul.menu li a {
     padding:0px;
 }
 #sidebar ul.sid li {
-    
+
     list-style-type: none;
 }
 #sidebar ul.sid .widget-container ul li {
@@ -87,5 +87,13 @@ ul.menu li a {
 }
 .category .post {
     clear: left;
-    
+
+}
+ul.menu {
+    height: 40px;
+}
+ul.menu li {
+    list-style-type: none;
+    float: left;
+    margin-right: 10px;
 }
