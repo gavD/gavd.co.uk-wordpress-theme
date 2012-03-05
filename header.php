@@ -37,14 +37,16 @@
     </header>
 
     <div class="row">
-        <div class="span12">
-            <nav>
-                <div class="btn-toolbar">
-                    <div class="btn-group">
-                        <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+       <div class="subnav subnav-fixed">
+            <div class="span12">
+                <nav>
+                    <div class="btn-toolbar">
+                        <div class="btn-group">
+                            <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+                        </div>
                     </div>
-                </div>
-            </nav>
-        </div>
+                </nav>
+            </div>
+       </div>
     </div>
     <div id="container">

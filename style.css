@@ -91,3 +91,7 @@ header {
 #header-widgets h3 {
     color: #bbb;
 }
+
+nav .btn-group {
+    width: 100%
+}
