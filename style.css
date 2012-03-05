@@ -13,15 +13,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 }
 header .hero-unit {
-    padding: 0;
-    position: relative;
-}
-
-#search {
-    position:absolute;
-    right:0px;
-    bottom: 0px;
-
 }
 #search form {
     margin: 0;
@@ -34,22 +25,15 @@ ul.menu {
     margin: 0px;
     padding: 0px;
 }
-/*ul.menu li {
-    float: left;
-    list-style-type: none;
 
-}
-ul.menu li a {
-    border: #000 1px solid;
-    padding: 10px;
-    margin-right: 10px;
-}*/
 #sidebar ul.sid,
+#header-widgets ul,
 #sidebar ul.sid .widget-container ul.blogroll{
     margin: 0px;
     padding:0px;
 }
-#sidebar ul.sid li {
+#sidebar ul.sid li,
+#header-widgets ul li {
 
     list-style-type: none;
 }
@@ -60,14 +44,6 @@ ul.menu li a {
     list-style-type: none;
     margin-bottom: 6px;
 
-}
-
-ul.menu li a {
-    color: #fff;
-}
-
-#content {
-    margin-top: 20px;
 }
 
 .entry-utility {
@@ -89,11 +65,29 @@ ul.menu li a {
     clear: left;
 
 }
-ul.menu {
-    height: 40px;
+
+#blog-title {
+    padding-top:16px;
+    padding-left:20px;
 }
-ul.menu li {
-    list-style-type: none;
-    float: left;
-    margin-right: 10px;
+#searchform {
+    padding-top: 28px;
+    text-align: right;
+    padding-right: 6px;
+}
+#searchform #s {
+    width: 195px;
+
+}
+
+header {
+    background: #F5F5F5;
+}
+
+#header-widgets {
+    margin-top: 16px;
+    color: #bbb;
+}
+#header-widgets h3 {
+    color: #bbb;
 }
