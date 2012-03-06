@@ -9,11 +9,6 @@ Tags: bootstrap
 License: CopyLeft. Do what you want with it.
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
-.hero-unit {
-
-}
-header .hero-unit {
-}
 #search form {
     margin: 0;
 }
@@ -50,9 +45,6 @@ ul.menu {
     padding-left: 6px;
 }
 
-
-
-
 .post img.wp-post-image {
     float: right;
 }
@@ -72,12 +64,9 @@ ul.menu {
 }
 #searchform {
     padding-top: 28px;
-    text-align: right;
-    padding-right: 6px;
 }
 #searchform #s {
-    width: 195px;
-
+    max-width: 195px;
 }
 
 header {
