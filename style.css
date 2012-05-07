@@ -42,7 +42,11 @@ ul.menu {
 }
 
 .entry-utility {
-    padding-left: 6px;
+    margin: 6px 0px 6px 0px;
+    padding: 6px;
+    
+    border-top: #777 1px solid;
+    border-bottom: #777 1px solid;
 }
 
 .post img.wp-post-image {
@@ -83,4 +87,25 @@ header {
 
 nav .btn-group {
     width: 100%
+}
+
+.entry-meta {
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.form-section {
+    clear: both;
+}
+
+.form-label {
+    width: 110px;
+    float: left;
+}
+
+.form-label label {
+    float: left;
+}
+.required {
+    padding-left: 2px;
 }

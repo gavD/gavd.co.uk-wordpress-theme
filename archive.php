@@ -1,5 +1,6 @@
 <?php get_header(); ?>
-<div id="content">
+<div id="content" class="row">
+    <div class="span9">
 <?php the_post(); ?>
 <?php if ( is_day() ) : ?>
 <h1 class="page-title"><?php printf( __( 'Daily Archives: <span>%s</span>', 'gavd' ), get_the_time(get_option('date_format')) ) ?></h1>
@@ -48,4 +49,5 @@
 <?php } ?>
 </div>
 <?php get_sidebar(); ?>
+</div>
 <?php get_footer(); ?>
