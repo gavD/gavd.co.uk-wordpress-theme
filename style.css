@@ -109,3 +109,6 @@ nav .btn-group {
 .required {
     padding-left: 2px;
 }
+.alignright {
+    float: right;
+}
