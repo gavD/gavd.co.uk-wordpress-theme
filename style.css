@@ -110,5 +110,7 @@ nav .btn-group {
     padding-left: 2px;
 }
 .alignright {
+    margin-left: 2px;
+    margin-bottom: 4px;
     float: right;
 }
