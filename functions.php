@@ -162,3 +162,6 @@ function gavd_custom_comments($comment, $args, $depth) {
 
 function explain_less_login_issues(){ return '<strong>ERROR</strong>: Entered credentials are incorrect.';}
 add_filter( 'login_errors', 'explain_less_login_issues' );
+
+add_theme_support( 'post-thumbnails' );
+set_post_thumbnail_size( form_option('thumbnail_size_w&&echo=false'), form_option('thumbnail_size_h&&echo=false'), true );

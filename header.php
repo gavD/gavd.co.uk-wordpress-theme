@@ -3,7 +3,6 @@
 <head>
     <meta http-equiv="content-type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
     <title><?php wp_title(' | ', true, 'right'); ?><?php bloginfo('name'); ?></title>
-    <link rel="stylesheet" type="text/css" href="/wp-content/plugins/wordpress-bootstrap-css/resources/bootstrap-2.0.1/css/bootstrap-responsive.min.css" />
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
     <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
     <?php wp_head(); ?>

@@ -114,3 +114,16 @@ nav .btn-group {
     margin-bottom: 4px;
     float: right;
 }
+
+.otw-sidebar .better-gh-widget img {
+    float: right;
+}
+.otw-sidebar .better-gh-widget p {
+    display: none;
+}
+.otw-sidebar .better-gh-widget li p {
+    display: block;
+}
+.otw-sidebar .widget {
+    clear: left;
+}
