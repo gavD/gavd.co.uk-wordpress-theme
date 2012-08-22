@@ -126,4 +126,10 @@ nav .btn-group {
 }
 .otw-sidebar .widget {
     clear: left;
+    margin-top: 20px;
 }
+.otw-sidebar .widget_wp_category_thumbnail ul {
+    height: 150px;
+    overflow: hidden;
+}
+
