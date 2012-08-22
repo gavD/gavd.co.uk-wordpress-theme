@@ -133,3 +133,11 @@ nav .btn-group {
     overflow: hidden;
 }
 
+#primary .widget_links img {
+    height: 40px;
+    width: 40px;
+    margin-right: 7px;
+    margin-bottom: 4px;
+    clear: left;
+    float: left;
+}
