@@ -141,3 +141,7 @@ nav .btn-group {
     clear: left;
     float: left;
 }
+
+.btn-group a {
+    font-size: 13px;
+}
