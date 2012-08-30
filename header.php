@@ -6,6 +6,11 @@
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
     <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
     <?php wp_head(); ?>
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/wp-content/themes/gavd/img/apple-touch-icon-iphone.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/wp-content/themes/gavd/img/apple-touch-icon-ipad.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/wp-content/themes/gavd/img/apple-touch-icon-iphone4.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/wp-content/themes/gavd/img/apple-touch-icon-ipad3.png" />
 </head>
 <body <?php body_class(); ?>>
 <div id="wrapper" class="hfeed container">
