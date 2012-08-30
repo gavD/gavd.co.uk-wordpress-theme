@@ -40,13 +40,18 @@ ul.menu {
     margin-bottom: 6px;
 
 }
-
+.form-allowed-tags {
+    display: none;
+}
 .entry-utility {
+    /*
     margin: 6px 0px 6px 0px;
     padding: 6px;
     
     border-top: #DDD 1px solid;
     border-bottom: #DDD 1px solid;
+    */
+    display: none;
 }
 
 .post img.wp-post-image {
