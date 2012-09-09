@@ -3,6 +3,13 @@
 <head>
     <meta http-equiv="content-type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
     <title><?php wp_title(' | ', true, 'right'); ?><?php bloginfo('name'); ?></title>
+    <meta name="description" content="<?php
+    $mdd = trim(strip_tags(apply_filters('the_excerpt', get_the_excerpt())));
+    if(!$mdd || $mdd === '') {
+        $mdd = "Gavin Davies's thoughts, game and links. Christian, ex-boxer, software developer in South Wales";
+    }
+    echo $mdd;
+    ?>"/>
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
     <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
     <?php wp_head(); ?>
