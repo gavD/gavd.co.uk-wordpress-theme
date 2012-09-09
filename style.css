@@ -40,7 +40,7 @@ ul.menu {
     margin-bottom: 6px;
 
 }
-.form-allowed-tags {
+.form-allowed-tags, #form-allowed-tags {
     display: none;
 }
 .entry-utility {
