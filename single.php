@@ -3,10 +3,6 @@
     <div class="span9">
 
 <?php the_post(); ?>
-<div id="nav-above" class="navigation">
-<p class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">&laquo;</span> %title' ) ?></p>
-<p class="nav-next"><?php next_post_link( '%link', '%title <span class="meta-nav">&raquo;</span>' ) ?></p>
-</div>
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 <?php
 if ( has_post_thumbnail() ) {

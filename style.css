@@ -44,13 +44,6 @@ ul.menu {
     display: none;
 }
 .entry-utility {
-    /*
-    margin: 6px 0px 6px 0px;
-    padding: 6px;
-    
-    border-top: #DDD 1px solid;
-    border-bottom: #DDD 1px solid;
-    */
     display: none;
 }
 
@@ -64,7 +57,8 @@ ul.menu {
 }
 .category .post {
     clear: left;
-
+    margin-bottom: 20px;
+    border-bottom: 1px #DDD dashed;
 }
 
 #blog-title {
@@ -149,4 +143,31 @@ nav .btn-group {
 
 .btn-group a {
     font-size: 13px;
+}
+
+
+.entry-summary {
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.meta-prep-entry-date, .meta-prep-author {
+    display: none;
+}
+.author.vcard  {
+    display: none;
+}
+.entry-meta  .meta-sep {
+    display: none;
+}
+.nav-previous {
+    float: left;
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: #DDD 1px solid;
+}
+#comments, #respond {
+    margin-top: 30px;
 }
