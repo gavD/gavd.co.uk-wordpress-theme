@@ -171,3 +171,7 @@ nav .btn-group {
 #comments, #respond {
     margin-top: 30px;
 }
+
+#comments {
+    clear: left;
+}
