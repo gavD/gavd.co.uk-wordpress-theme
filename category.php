@@ -2,7 +2,7 @@
 <div id="content" class="row">
     <div class="span9">
         <?php the_post(); ?>
-        <h1 class="page-title"><?php _e( 'Category Archives for', 'gavd' ) ?> <span><?php single_cat_title() ?></span></h1>
+        <h1 class="page-title"><span><?php single_cat_title() ?></span></h1>
         <?php $categorydesc = category_description(); if ( !empty($categorydesc) ) echo apply_filters( 'archive_meta', '<div class="archive-meta">' . $categorydesc . '</div>' ); ?>
         <?php rewind_posts(); ?>
         <?php global $wp_query; $total_pages = $wp_query->max_num_pages; if ( $total_pages > 1 ) { ?>
@@ -14,7 +14,7 @@
     <?php while ( have_posts() ) : the_post(); ?>
 
             <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                
+
                 <h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'gavd'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
 
                     <?php
