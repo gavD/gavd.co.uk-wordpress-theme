@@ -2,7 +2,7 @@
 <html <?php language_attributes(); ?>>
 <head>
     <meta http-equiv="content-type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
-    <title><?php wp_title(' | ', true, 'right'); ?><?php bloginfo('name'); ?></title>
+    <title><?php wp_title(' | ', true, 'right'); ?></title>
     <meta name="description" content="<?php
     $mdd = trim(strip_tags(apply_filters('the_excerpt', get_the_excerpt())));
     if(!$mdd || $mdd === '') {
