@@ -24,25 +24,11 @@
     <header>
         <div class="row">
 
-            <div class="span3" id="branding">
+            <div class="span12" id="branding">
                 <div id="blog-title">
                     <h1><?php if ( is_singular() ) {} else {echo '<h1>';} ?><a href="<?php echo home_url() ?>/" title="<?php bloginfo( 'name' ) ?>" rel="home"><?php bloginfo( 'name' ) ?></a><?php if ( is_singular() ) {} else {echo '</h1>';} ?></h1>
                     <p id="blog-description"><?php bloginfo( 'description' ) ?></p>
                 </div>
-            </div>
-
-            <div class="span6">
-                <?php if ( is_active_sidebar('header-widget-area') ) : ?>
-                <div id="header-widgets" class="widget-area">
-                    <ul class="sid">
-                    <?php dynamic_sidebar('header-widget-area'); ?>
-                    </ul>
-                </div>
-                <?php endif; ?>
-            </div>
-
-            <div class="span3">
-                <?php get_search_form(); ?>
             </div>
         </div>
     </header>

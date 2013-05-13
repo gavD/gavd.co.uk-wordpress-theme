@@ -49,15 +49,6 @@ function gavd_theme_widgets_init() {
         'before_title' => '<h3 class="widget-title">',
         'after_title' => '</h3>',
     ));
-
-    register_sidebar(array(
-        'name' => 'Header Widget Area',
-        'id' => 'header-widget-area',
-        'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-        'after_widget' => "</li>",
-        'before_title' => '<h3 class="widget-title">',
-        'after_title' => '</h3>',
-    ));
 }
 
 add_action('init', 'gavd_theme_widgets_init');
