@@ -30,7 +30,6 @@
 <?php if ( $gavd_tags = gavd_tags(', ') ) : // ?>
 <span class="tag-links"><?php printf( __( 'Also tagged %s', 'gavd' ), $gavd_tags ) ?></span>
 <?php endif; ?>
-<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'gavd' ), __( '1 Comment', 'gavd' ), __( '% Comments', 'gavd' ) ) ?></span>
 <?php edit_post_link( __( 'Edit', 'gavd' ), "<span class=\"meta-sep\"> | </span>\n\t\t\t\t\t\t<span class=\"edit-link\">", "</span>\n\t\t\t\t\t\n" ) ?>
 </div>
 </div>

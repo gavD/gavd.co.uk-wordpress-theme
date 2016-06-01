@@ -30,15 +30,7 @@ get_the_tag_list( __( ' and tagged ', 'gavd' ), ', ', '' ),
 get_permalink(),
 the_title_attribute('echo=0'),
 get_post_comments_feed_link() ) ?>
-<?php if ( ('open' == $post->comment_status) && ('open' == $post->ping_status) ) : // ?>
-<?php printf( __( '<a class="comment-link" href="#respond" title="Post a Comment">Post a Comment</a> or leave a trackback: <a class="trackback-link" href="%s" title="Trackback URL for your post" rel="trackback">Trackback URL</a>.', 'gavd' ), get_trackback_url() ) ?>
-<?php elseif ( !('open' == $post->comment_status) && ('open' == $post->ping_status) ) : // ?>
-<?php printf( __( 'Comments are closed, but you can leave a trackback: <a class="trackback-link" href="%s" title="Trackback URL for post" rel="trackback">Trackback URL</a>.', 'gavd' ), get_trackback_url() ) ?>
-<?php elseif ( ('open' == $post->comment_status) && !('open' == $post->ping_status) ) : // ?>
-<?php _e( 'Trackbacks are closed, but you can <a class="comment-link" href="#respond" title="Post a Comment">Post a Comment</a>.', 'gavd' ) ?>
-<?php elseif ( !('open' == $post->comment_status) && !('open' == $post->ping_status) ) : // ?>
-<?php _e( ' Both comments and trackbacks are closed.', 'gavd' ) ?>
-<?php endif; ?>
+
 <?php edit_post_link( __( 'Edit', 'gavd' ), "\n\t\t\t\t\t<span class=\"edit-link\">", "</span>" ) ?>
 </div>
 </div>
@@ -46,7 +38,7 @@ get_post_comments_feed_link() ) ?>
 <p class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">&laquo;</span> %title' ) ?></p>
 <p class="nav-next"><?php next_post_link( '%link', '%title <span class="meta-nav">&raquo;</span>' ) ?></p>
 </div>
-<?php comments_template('', true); ?>
+
 </div>
 <?php get_sidebar(); ?>
     </div>
